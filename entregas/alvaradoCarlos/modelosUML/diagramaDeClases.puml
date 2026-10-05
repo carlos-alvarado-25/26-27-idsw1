@@ -1,0 +1,16 @@
+@startuml
+
+class FuenteDeLuz
+class Cuerpo
+class Reflejo
+class Posicion
+class Perspectiva
+class Superficie
+
+FuenteDeLuz -- Cuerpo: Ilumina un >
+Cuerpo -- Reflejo:  genera >
+Cuerpo -- Posicion:  ubicado >
+Reflejo -- Perspectiva: posee >
+
+Reflejo -- Superficie: se situa >
+@enduml
