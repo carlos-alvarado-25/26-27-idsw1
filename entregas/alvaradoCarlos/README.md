@@ -2,7 +2,17 @@
 
 <div align="center">
 
-![Diagrama de Clases](/entregas/alvaradoCarlos/images/mDdSombra.svg)
+|   Diagrama de Clases     | 
+|--------|
+|  ![Diagrama de Clases](/entregas/alvaradoCarlos/images/dDClases.svg)      |    
+
+|   Diagrama de Objetos     | 
+|--------|
+|  ![Diagrama de Objetos](/entregas/alvaradoCarlos/images/dDObjetos.svg)      |
+
+|   Diagrama de Estados     | 
+|--------|
+|  ![Diagrama de Estados](/entregas/alvaradoCarlos/images/dDEstados.svg)      |   
 
 </div>
 

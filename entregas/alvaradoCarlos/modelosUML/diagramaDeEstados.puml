@@ -1,0 +1,13 @@
+@startuml
+[*] --> Inexistente
+
+Inexistente --> Proyectada : Fuente ilumina un cuerpo
+Proyectada --> Actualizada : Cuerpo cambia de Posicion / Mueve la fuente de luz
+Actualizada --> Proyectada : Finaliza cálculo espacial
+
+Proyectada --> Distorsionada : Cambia la perspectiva de observación
+Distorsionada --> Proyectada : Se estabiliza el punto de vista
+
+Proyectada --> Inexistente : Fuente se apaga
+
+@enduml

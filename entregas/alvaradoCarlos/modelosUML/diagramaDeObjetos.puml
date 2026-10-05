@@ -1,0 +1,44 @@
+@startuml
+
+object "focoPrincipal : FuenteDeLuz" as foco {
+  tipo = "Spotlight LED"
+  intensidad = "800 lm"
+  color = "Blanco Cálido"
+}
+
+object "estatuaBronce : Cuerpo" as estatua {
+  nombre = "Estatua del Pensador"
+  material = "Bronce"
+  opacidad = 1.0
+}
+
+object "sombraProyectada : Reflejo" as sombra {
+  longitud = "2.4 m"
+  opacidadSombra = 0.75
+}
+
+object "coordenadasEstatua : Posicion" as posEstatua {
+  x = 12.5
+  y = 0.0
+  z = 5.2
+}
+
+object "anguloCamara : Perspectiva" as vista {
+  anguloCamara = "45°"
+  distanciaFocal = "50 mm"
+  distorsión = "Mínima"
+}
+
+object "sueloMarmol : Superficie" as suelo {
+  tipo = "Suelo de Galería"
+  textura = "Mármol Pulido"
+  rugosidad = 0.1
+}
+
+foco -- estatua : Ilumina un >
+estatua -- sombra : genera >
+estatua -- posEstatua : ubicado >
+sombra -- vista : posee >
+sombra -- suelo : se situa >
+
+@enduml
