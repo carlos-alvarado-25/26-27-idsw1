@@ -1,13 +1,14 @@
 @startuml
-[*] --> Inexistente
+[*] --> Proyectada
 
-Inexistente --> Proyectada : Fuente ilumina un cuerpo
-Proyectada --> Actualizada : Cuerpo cambia de Posicion / Mueve la fuente de luz
-Actualizada --> Proyectada : Finaliza cálculo espacial
+state "Proyectada" as Proyectada : Silueta estable sobre Superficie
+state "EnTransición" as Dinamica : Recalculando Silueta en tiempo real
 
-Proyectada --> Distorsionada : Cambia la perspectiva de observación
-Distorsionada --> Proyectada : Se estabiliza el punto de vista
+Proyectada --> Dinamica : cambia de posición
+Dinamica --> Proyectada : se estabiliza
 
-Proyectada --> Inexistente : Fuente se apaga
+' Finalización del ciclo por eliminación de causas
+Proyectada --> [*] : apagar fuente o retirar cuerpo
+Dinamica --> [*] : apagar fuente o retirar cuerpo
 
 @enduml
